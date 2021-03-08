@@ -1,16 +1,16 @@
 {
   "users": [
     {
-      "name": "adda",
-      "age": "2",
-      "team": "Dev",
-      "id": 1
-    },
-    {
       "name": "new task",
       "age": "2",
-      "team": "Dev",
+      "team": "Test",
       "id": 2
+    },
+    {
+      "name": "task1",
+      "age": "4",
+      "team": "Dev",
+      "id": 3
     }
   ]
 }

@@ -111,7 +111,7 @@ class User extends Component {
       <li className="item">
         <input value={name} disabled={disabled}  onChange={this.handleChange('name')}/>
         <input value={age} disabled={disabled}  onChange={this.handleChange('age')}/>
-        <select value={team} onChange={this.handleChange('team')}>
+        <select value={team} disabled={disabled} onChange={this.handleChange('team')}>
             <option>Dev</option>
             <option>Test</option>
           </select>
@@ -135,7 +135,7 @@ class TestUser extends Component{
     console.log("test user",this.props.datatest,dat)
     return(
       <div>
-        <label>Test Board</label>
+        <div style={{marginBottom:'20px'}}><h3>Test Board</h3></div>
         {dat && dat.map((user)=>{
            return <li className="item">
              <label>Description: {user.name}</label><br/>
@@ -158,7 +158,7 @@ class DevUser extends Component{
     console.log("dev user",this.props.datatest,dat)
     return(
       <div>
-        <label>Dev Board</label>
+        <div style={{marginBottom:'20px'}}><h3>Dev Board</h3></div>
         {dat && dat.map((user)=>{
            return <li className="item" style={{listStyle:'none'}}>
              <label>Description: {user.name}</label><br/>
